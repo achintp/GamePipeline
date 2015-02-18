@@ -1,0 +1,7 @@
+model delta.model;
+data deltaD.data;
+option solver cplex;
+solve;
+printf "%f", delta > delta.out;
+display T;
+display x;

@@ -1,0 +1,12 @@
+u'ATT'
+{u'purePeriodicDecept-5_5': 0.5194774939, u'purePeriodicMax-0.1': 0.4805225061}
+u'DEF'
+{u'probeCountTime-2_10': 0.2623286727, u'probeCountTime-4_10': 0.7376713273}
+
+
+u'ATT'
+{u'purePeriodic-0.7': 0.0695144273, u'purePeriodic-20': 0.9304855727}
+u'DEF'
+{u'probeCountTime-1_10': 0.7855749635, u'probeCountTime-2_100': 0.2144250365}
+
+

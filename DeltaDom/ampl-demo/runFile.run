@@ -1,0 +1,6 @@
+model delta2G.model;
+data delta2G.data;
+option solver cplex;
+solve;
+printf "%f", delta > delta2G.out;
+display x;

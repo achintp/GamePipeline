@@ -1,0 +1,14 @@
+Col 2 dominates col 3
+Row 32 dominates row 35
+Col 15 dominates col 16
+Row 6 dominates row 9
+Row 28 dominates row 29
+Row 22 dominates row 39
+Row 24 dominates row 40
+Col 2 dominates col 3
+Row 32 dominates row 35
+Col 15 dominates col 16
+Row 6 dominates row 9
+Row 28 dominates row 29
+Row 22 dominates row 39
+Row 24 dominates row 40

@@ -1,0 +1,22 @@
+u'ATT'
+{u'periodic-0.1': 0.2630739826, u'periodicDecept-20_27': 0.7369260174}
+u'DEF'
+{u'probeCountTime-1_10': 0.5919691225, u'probeCountTime-2_50': 0.4080308775}
+
+
+u'ATT'
+{u'periodicDecept-5_1': 0.7721113899, u'periodicMax-0.1': 0.2278886101}
+u'DEF'
+{u'probeCountTime-3_10': 0.3966331216, u'probeCountTime-4_10': 0.6033668784}
+
+
+u'ATT'
+{u'periodic-0.1': 0.3919396116,
+ u'periodic-11': 0.1970024704,
+ u'periodicDecept-20_27': 0.411057918}
+u'DEF'
+{u'probeCountTime-1_10': 0.1930817137,
+ u'probeCountTime-2_10': 0.3645820335,
+ u'probeCountTime-2_50': 0.4423362528}
+
+

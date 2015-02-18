@@ -1,0 +1,5 @@
+[{u'data': {u'ATT': {u'periodic-0.1': 0.9310674374,
+                     u'periodic-1': 0.0689325626},
+            u'DEF': {u'periodic-1': 0.6721884793,
+                     u'periodic-7': 0.3278115207}},
+  u'type': u'GA_Profile'}]

@@ -1,0 +1,42 @@
+u'ATT'
+{u'periodic-7': 0.2862500468, u'purePeriodicDecept-20_1': 0.7137499532}
+u'DEF'
+{u'probeCountTime-3_10': 0.9670438146, u'probeCountTime-3_50': 0.0329561854}
+
+
+u'ATT'
+{u'purePeriodic-0.7': 0.0695144273, u'purePeriodic-20': 0.9304855727}
+u'DEF'
+{u'probeCountTime-1_10': 0.7855749635, u'probeCountTime-2_100': 0.2144250365}
+
+
+u'ATT'
+{u'periodic-7': 0.4478442243,
+ u'purePeriodicDecept-20_1': 0.2220226111,
+ u'purePeriodicDecept-5_1': 0.3301331647}
+u'DEF'
+{u'periodic-15': 0.0310240072,
+ u'probeCountTime-3_10': 0.9465072157,
+ u'probeCountTime-3_50': 0.0224687772}
+
+
+u'ATT'
+{u'periodic-7': 0.4087282685,
+ u'purePeriodic-0.7': 0.0341247028,
+ u'purePeriodicDecept-5_1': 0.5571470287}
+u'DEF'
+{u'periodic-15': 0.0338566177,
+ u'probeCountTime-3_10': 0.9424042907,
+ u'probeCountTime-3_50': 0.0237390916}
+
+
+u'ATT'
+{u'periodic-20': 0.5212563753,
+ u'purePeriodic-0.7': 0.0745106799,
+ u'purePeriodic-20': 0.4042329449}
+u'DEF'
+{u'probeCountTime-1_10': 0.5981031974,
+ u'probeCountTime-2_100': 0.1919605209,
+ u'probeCountTime-3_10': 0.2099362817}
+
+

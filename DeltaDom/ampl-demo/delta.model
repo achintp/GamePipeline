@@ -1,0 +1,23 @@
+#Strategy1 is player not being considered
+#Strategy2 is player being considered
+
+set Strategy1;
+set Strategy2;
+set T;
+
+# payoff matrix
+param u{Strategy2 union T, Strategy1};
+
+# variables 
+var x{T, Strategy2} >= 0; # dominating strategy
+var delta;
+
+minimize f: delta;
+
+subject to
+
+R1{t in T, c in Strategy1}:
+  delta >= u[t,c] - sum{s in Strategy2} (x[t,s] * u[s,c]);
+
+R2{t in T}:
+  sum{s in Strategy2} x[t,s] = 0.999999;

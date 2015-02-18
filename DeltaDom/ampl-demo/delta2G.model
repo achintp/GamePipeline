@@ -1,0 +1,20 @@
+set Strategy;
+set T;
+
+# payoff matrix
+param u{Strategy union T, Strategy union T};
+
+# variables 
+var x{T, Strategy} >= 0; # dominating strategy
+var delta;
+
+minimize f: delta;
+
+subject to
+
+#R1{t in T, c in Strategy union T}:
+R1{t in T, c in Strategy}:
+  delta >= u[t,c] - sum{s in Strategy} (x[t,s] * u[s,c]);
+
+R2{t in T}:
+  sum{s in Strategy} x[t,s] = 0.999999;
