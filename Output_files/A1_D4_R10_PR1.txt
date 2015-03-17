@@ -1,0 +1,5 @@
+[{u'data': {u'ATT': {u'periodic-0.1': 0.3641212394,
+                     u'periodicMax-0.1': 0.6358787606},
+            u'DEF': {u'probeCountTime-2_1': 0.1115934588,
+                     u'probeCountTime-4_1': 0.8884065412}},
+  u'type': u'GA_Profile'}]

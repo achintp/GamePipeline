@@ -1,0 +1,33 @@
+Strategies for the defender:
+
+Non-adaptive strategies:
+
+1. Randomized renewal strategy - 
+	a. Will pick from a range of periods according to a given probability distribution
+	Parameters: Probability distribution over a range
+
+	b. Will follow some exponential queue process for generating attack timings
+	Parameters: Lambda or equivalent mean time
+
+2. Refactory randomized renewal strategy - 
+	a. The inclusion of a refactory period after each move, and then generating the strategies in the same way as above
+	Parameters: refactory time that can change depending on the number of servers under control + previous parameters
+
+Adaptive Strategies:
+
+1. Stochastic Probe Count - Based on the knowledge of the Bernoulli distribution of the attack succeeding for a given server at a point of time, the defender will 'simulate' an attack to decide whether it will succeed or not and reimage
+Parameters: probability function
+
+2. Control N - The defender aims to control N servers. At any time period it evaluates the 'health' of the system by calculating the probability of owning at least N servers. At a certain threshold it will rebalance to own N by reimaging.
+
+
+Strategies for the attacker:
+
+Non-Adaptive:
+
+1. Analogous to the above
+2. Periodic Decept
+
+Adaptive:
+
+1. Conrol N: The attacker aims to control N of the servers at any point of time. Given the downtime period. 

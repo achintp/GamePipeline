@@ -73,7 +73,7 @@ def solveGame(data, outname):
 		strat = {role: {index : strategy}}
 		payoff = list of list of payoffs
 	"""
-	g = gambit.new_table([data.numStrat[0], \
+	g = gambit.Game.new_table([data.numStrat[0], \
 		data.numStrat[1]])
 	g.title = outname
 

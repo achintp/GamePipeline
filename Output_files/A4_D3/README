@@ -1,0 +1,22 @@
+Defender Utility - 
+
+The defender cares only about haivng majority of the servers up and under it's control. 
+
+Control Slope - 5
+Control Shift - 0.5
+Control Weight - 1
+C+D Slope - x
+C+D Shift - x
+C+D Weight - 0
+
+Attacker Utility - 
+
+The attacker cares only about having the sum of servers down or under it's control to be a majority
+
+Control Slope - x
+Control Shift - x
+Control Weight - 0
+C+D Slope - 5
+C+D Shift - 0.5
+C+D Weight - 1
+
