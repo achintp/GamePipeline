@@ -1,0 +1,72 @@
+In the last few experiments we saw that having a probe cost of 0.2, 1 and even 5 kept the attacker maintaining a high frequency probe rate and forcing the defender on the backfoot. When probe cost was upped to 10 the attacker chose No-Op since the cost was too high to maintain useful utility.
+
+Experimenting then around the probe cost of 1 and 5, vary parameters to make it harder for the attacker. These parameters include the downtime and the parameter controlling the growth of the function governing probability of a probe succeeding. We name these DT and K for ease of notation.
+
+With probe cost = 1:
+
+a) 
+K = 0.05 
+DT = 7
+[{u'data': {u'ATT': {u'periodic-0.1': 0.1112529068,
+                     u'periodicMax-0.1': 0.8887470932},
+            u'DEF': {u'periodic-100': 0.4528657457,
+                     u'probeCountTime-4_1': 0.5471342543}},
+
+b)
+K = 0.01
+DT = 7
+[{u'data': {u'ATT': {u'periodic-0.1': 0.5688697143,
+                     u'periodicMax-0.1': 0.4311302857},
+            u'DEF': {u'periodic-7': 0.0165974882,
+                     u'probeCountTime-4_300': 0.9834025118}},
+  u'type': u'GA_Profile'}]
+
+
+ c)
+ K = 0.01
+ DT = 3
+ [{u'data': {u'ATT': {u'periodicMax-0.1': 1.0},
+            u'DEF': {u'probeCountTime-2_50': 1.0}},
+  u'type': u'GA_Profile'}]
+
+A probe cost of 1 is still low enough for the attacker to keep on probing continuously, and as in case (a) the defender takes a backfoot on reimaging. With an expected probe number of ~4.5 for an attack succeeding, it seems the defender will try to reimage fast (4_1 indicates that about when the server is expected to go down the defender will reimage, also note that within a period of 1 the attacker can probe upto 10 times, and with a maxprobe the attacker will probe the same server more than 4 times). As K is decreased it requires more probes to compromise a server, and expecially in (c) it's observable that both the attacker and defender operate at a high frequency of action. With the downtime as 3 in (c) the defender reimages faster (at a probe count of 2) since the machines will come up faster as well and spend more time in the uncompromised state before gettign compromised. However, throughout this the attacker continues to attempt to be as fast as possible.
+
+
+
+With probe cost = 5
+
+a)
+K = 0.05
+DT = 7
+[{u'data': {u'ATT': {u'periodic-0.1': 0.3605259546,
+                     u'periodicMax-0.1': 0.6394740454},
+            u'DEF': {u'probeCountTime-3_50': 0.3402514734,
+                     u'probeCountTime-4_300': 0.6597485266}},
+  u'type': u'GA_Profile'}]
+
+
+b)
+K = 0.05
+DT = 3
+[{u'data': {u'ATT': {u'periodic-0.1': 0.6894331522,
+                     u'periodicMax-0.1': 0.3105668478},
+            u'DEF': {u'periodic-100': 0.471132408,
+                     u'probeCountTime-4_300': 0.528867592}},
+  u'type': u'GA_Profile'}]
+
+
+c)
+K = 0.01
+DT = 7
+[{u'data': {u'ATT': {u'No-Op': 1.0}, u'DEF': {u'probeCountTime-4_50': 1.0}},
+  u'type': u'GA_Profile'}]
+
+d)
+K = 0.01
+DT = 3
+[{u'data': {u'ATT': {u'No-Op': 1.0}, u'DEF': {u'probeCountTime-4_50': 1.0}},
+  u'type': u'GA_Profile'}]
+
+ After increasing the probe cost to 5, (a) and (b) exhibit similar behavior from the agents with the attacker maintaining a high rate of attack. (c) however, proves too expensive for the attacker to continue at this rate and he chooses to not act anymore. Any more restrictions placed beyond (c) ( decreasing k, decreasing DT, increasing PR) will result in the same equilibria. Both PR and K have significant effect on the attacker as compared to DT (since even with reducing DT it's in the attackers interest to keep probing as fast as possible to either force the machine down or keep it in it's control).
+
+ Exploration around this parameter space might be fruitful (? Baseless hypothesis at the moment)

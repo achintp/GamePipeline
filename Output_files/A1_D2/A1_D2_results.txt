@@ -1,0 +1,28 @@
+Game scenario:
+
+Attacker: Cares equally for having servers down or up and in his control
+Defender: Cares only about having all servers active and in his control
+
+Servers: 10
+
+Probe miss rate = 0:
+{u'ATT': {u'periodicMax-0.1': 1.0},
+u'DEF': {u'periodicMax-30': 1.0}},
+
+Probe miss rate = 0.1:
+{u'ATT': {u'periodicMax-0.1': 1.0},
+u'DEF': {u'periodic-7': 1.0}}
+
+Probe miss rate = 0.3:
+{u'ATT': {u'periodicMax-0.1': 1.0},
+u'DEF': {u'probeCountTime-2_300': 1.0}}
+
+Probe miss rate = 0.7:
+{u'ATT': {u'periodicMax-0.1': 1.0},
+u'DEF': {u'probeCountTime-3_10': 1.0}}
+
+Probe miss rate = 0.9:
+{u'ATT': {u'periodicMax-0.1': 1.0},
+u'DEF': {u'probeCountTime-4_1': 1.0}}
+
+yZygCGgfot1tgLhLuJZe

@@ -1,0 +1,54 @@
+Some of the results of the A1_D3 environment
+(
+A1 - Attacker utility is defined by equal weights for control and down servers and same parametrization for both sigmoids
+D3 - Defender utility is defined by having a sharp cutoff for any beneficial utility and only gains utility from up and in control servers
+)
+
+When defender utility was set to having almost all servers (~9) in control:
+[{u'data': {u'ATT': {u'periodicMax-0.1': 1.0}, u'DEF': {u'periodic-7': 1.0}},
+  u'type': u'GA_Profile'}]
+
+ Attacker would be too aggressive, Defender would be unable to recover and would be losing irrespective of choice
+
+On increasing the attackers probe cost (initial 0.2) and demanding defender have only majority (~6) for utility:
+Probe cost - 0.5
+[{u'data': {u'ATT': {u'periodicMax-0.1': 1.0},
+            u'DEF': {u'probeCountTime-2_1': 1.0}},
+  u'type': u'GA_Profile'}]
+
+Probe cost - 1
+[{u'data': {u'ATT': {u'periodic-0.1': 0.1112529068,
+                     u'periodicMax-0.1': 0.8887470932},
+            u'DEF': {u'periodic-100': 0.4528657457,
+                     u'probeCountTime-4_1': 0.5471342543}},
+  u'type': u'GA_Profile'}]
+
+Probe cost - 5
+[{u'data': {u'ATT': {u'periodic-0.1': 0.3605259546,
+                     u'periodicMax-0.1': 0.6394740454},
+            u'DEF': {u'probeCountTime-3_50': 0.3402514734,
+                     u'probeCountTime-4_300': 0.6597485266}},
+  u'type': u'GA_Profile'}]
+
+Probe cost 10 - 
+[{u'data': {u'ATT': {u'No-Op': 1.0}, u'DEF': {u'probeCountTime-4_50': 1.0}},
+  u'type': u'GA_Profile'}]
+
+The initial behavior persists all the way till probe cost goes to 5. The reason for this being that after the initial aggressive attack where the attacker incurs a high cost, the servers either remain in his control or go down, both accruing utility. Any server that comes up should be attacked aggressively to keep operating near the ends of the utility curve. With the aggressiv defender in play as well (remiaging at 2,3,4 probes) the attacker operates at the higher end of the utility curve for 'servers down' for large amounts of time.
+
+The probe cost of 10 is a jump to the other extreme, making things too diffcult for the attacker and forcing a No-Op from the attacker.
+
+Other behavior analyzed included reducing defender restrictins even further and only demanding ~4 for reasonable utility. 
+
+With Probe Cost = 1
+[{u'data': {u'ATT': {u'periodic-0.1': 0.3641212394,
+                     u'periodicMax-0.1': 0.6358787606},
+            u'DEF': {u'probeCountTime-2_1': 0.1115934588,
+                     u'probeCountTime-4_1': 0.8884065412}},
+  u'type': u'GA_Profile'}]
+
+Hence, it is still too strict for the defender.
+
+Currently, some exploration has been done with decreasing the alpha, to slow the rate of increase in probability of the attack succeeding with respect to the number of probes.
+
+Other exploration is in exploring utility models that give the defender utility for down servers as well.
