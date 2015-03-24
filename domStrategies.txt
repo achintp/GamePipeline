@@ -1,4 +1,7 @@
 {u'ATT': ['No-Op',
+          'controlN-1_1',
+          'controlN-1_10',
+          'controlN-1_5',
           'periodic-0.1',
           'periodic-1',
           'periodic-10',
