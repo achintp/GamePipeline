@@ -1,0 +1,33 @@
+AC:
+Attacker cares about having majority of the servers in its control or down
+Attacker Control Slope: x
+Attacker Control Shift: x
+Attacker sum slope: 5
+Attacker sum shift: 0.5
+Attacker Control Weight: 0
+
+AA:
+Attacker cares about having servers active and under it's control
+Attacker Control Slope: 5
+Attacker Control Shift: 0.5
+Attacker sum Slope: x
+Attacker sum Shift: x
+Attacker Control Weight: 1
+
+DC:
+Defender cares only about having majority of the servers in it's control or down
+ Defender Control Slope: x
+ Defender Control Shift: x
+ Defender sum slope: 5
+ Defender sum shift: 0.5
+ Defender Control Weight: 0
+
+DA:
+ Defender cares about having servers active and under it's control
+ Defender Control Slope: 5
+ Defender Control Shift: 0.5
+ Defender sum Slope: x
+ Defender sum Shift: x
+ Defender Control Weight: 1
+
+
