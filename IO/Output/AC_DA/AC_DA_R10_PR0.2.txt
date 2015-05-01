@@ -1,0 +1,4 @@
+[{u'data': {u'ATT': {u'No-Op': 0.0943796875, u'periodic-1': 0.9056203125},
+            u'DEF': {u'controlN-3_0.001_1': 0.1997733415,
+                     u'refactoryRenewal-0_1': 0.8002266585}},
+  u'type': u'GA_Profile'}]

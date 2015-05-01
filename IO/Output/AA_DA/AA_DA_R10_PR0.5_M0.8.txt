@@ -1,0 +1,13 @@
+[{u'data': {u'ATT': {u'No-Op': 0.1744041113,
+                     u'refactoryRenewal-0_1': 0.8255958887},
+            u'DEF': {u'periodicMax-7': 0.4304220382,
+                     u'refactoryRenewal-0_1': 0.5695779618}},
+  u'type': u'GA_Profile'},
+ {u'data': {u'ATT': {u'periodicMax-0.1': 1.0},
+            u'DEF': {u'probeCountTime-4_50': 1.0}},
+  u'type': u'GA_Profile'},
+ {u'data': {u'ATT': {u'periodicMax-0.1': 0.9982904163,
+                     u'periodicMax-1': 0.0017095837},
+            u'DEF': {u'probeCountTime-4_50': 0.9737178485,
+                     u'refactoryRenewal-0_1': 0.0262821515}},
+  u'type': u'GA_Profile'}]

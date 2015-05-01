@@ -14,7 +14,7 @@ methods = {
 	"Computes Nash equilibria using extreme point enumeration":\
 		 gambit.nash.ExternalEnumMixedSolver
 	# "Compute equilibria in a two-player game via linear complementarity":\
-	# 	 gambit.nash.ExternalLCPSolver,
+	# 	 gambit.nash.ExternalLCPSolver
 	# "Compute Nash equilibria using function minimization":\
 	# 	gambit.nash.ExternalLyapunovSolver,
 	# "Compute equilibria via simplicial subdivision": \
@@ -102,6 +102,7 @@ def solveGame(data, outname):
 		# rF.write("\n\n")
 		for desc, func in methods.iteritems():
 			# rF.write(desc + "\n")
+			print "Using " + desc
 			solver = func();
 			res = solver.solve(g)
 			writeEquToFileJson(rF, g, res)

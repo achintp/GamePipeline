@@ -1,0 +1,2 @@
+[{u'data': {u'ATT': {u'controlN-1_5': 1.0}, u'DEF': {u'No-Op': 1.0}},
+  u'type': u'GA_Profile'}]
